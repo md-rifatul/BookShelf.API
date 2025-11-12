@@ -22,16 +22,36 @@ namespace BookShelf.API.Controllers
             return Ok(books);
         }
 
-        [HttpGet("GetBook")]
+        [HttpGet("GetBook/{id}")]
         public IActionResult GetBook(int id)
         {
             var book = _bookService.GetBookById(id);
             return Ok(book);
         }
+
         [HttpPost("AddBook")]
         public IActionResult AddBook([FromBody] Book book)
         {
             _bookService.AddBook(book);
+            return Ok();
+        }
+
+        [HttpPut("Update/{id}")]
+        public IActionResult UpdateBook(int id, [FromBody] Book book)
+        {
+            var existingBook = _bookService.GetBookById(id);
+            existingBook.Title = book.Title;
+            existingBook.AuthorId = book.AuthorId;
+            existingBook.Year = book.Year;
+            _bookService.UpdateBook(existingBook);
+            return Ok();
+        }
+
+        [HttpDelete("Delete/{id}")]
+        public IActionResult DeleteBook(int id)
+        {
+            var existingBook = _bookService.GetBookById(id);
+            _bookService.DeleteBook(existingBook);
             return Ok();
         }
 

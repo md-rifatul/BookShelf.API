@@ -39,6 +39,7 @@ namespace BookShelf.API.Services
         public void UpdateBook(Book book)
         {
             _bookRepository.Update(book);
+            _db.Commit();
         }
     }
 }
