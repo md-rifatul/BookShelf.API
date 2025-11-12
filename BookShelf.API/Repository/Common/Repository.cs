@@ -1,8 +1,8 @@
 ﻿using BookShelf.API.Data;
-using BookShelf.API.Repository.IRepository;
+using BookShelf.API.Repository.Common.IRepository;
 using Microsoft.EntityFrameworkCore;
 
-namespace BookShelf.API.Repository
+namespace BookShelf.API.Repository.Common
 {
     public class Repository<T> : IRepository<T> where T : class
     {
@@ -20,6 +20,5 @@ namespace BookShelf.API.Repository
         public void Add(T entity) => _dbSet.Add(entity);
         public void Update(T entity) => _dbSet.Update(entity);
         public void Delete(T entity) => _dbSet.Remove(entity);
-        public void Save() => _dbcontext.SaveChanges();
     }
 }
