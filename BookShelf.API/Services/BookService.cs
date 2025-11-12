@@ -8,35 +8,37 @@ namespace BookShelf.API.Services
     public class BookService : IBookService
     {
         private readonly IBookRepository _bookRepository;
-        private readonly ICommit _commit;
+        private readonly ICommit _db;
         public BookService(IBookRepository bookRepository, ICommit commit)
         {
             _bookRepository = bookRepository;
-            _commit = commit;
+            _db = commit;
         }
         public void AddBook(Book book)
         {
-            throw new NotImplementedException();
+            _bookRepository.Add(book);
+            _db.Commit();
         }
 
         public void DeleteBook(Book book)
         {
-            throw new NotImplementedException();
+            _bookRepository?.Delete(book);
+            _db.Commit();
         }
 
         public IEnumerable<Book> GetAllBooks()
         {
-            throw new NotImplementedException();
+            return _bookRepository.GetAll();
         }
 
         public Book GetBookById(int id)
         {
-            throw new NotImplementedException();
+            return _bookRepository.GetById(id);
         }
 
         public void UpdateBook(Book book)
         {
-            throw new NotImplementedException();
+            _bookRepository.Update(book);
         }
     }
 }
