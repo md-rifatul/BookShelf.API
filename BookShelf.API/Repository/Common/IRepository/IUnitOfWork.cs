@@ -1,6 +1,6 @@
 ﻿namespace BookShelf.API.Repository.Common.IRepository
 {
-    public interface ICommit
+    public interface IUnitOfWork
     {
         void Commit();
     }

@@ -3,15 +3,15 @@ using BookShelf.API.Repository.Common.IRepository;
 
 namespace BookShelf.API.Repository.Common
 {
-    public class Commit : ICommit
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly ApplicationDbContext _dbContext;
 
-        public Commit(ApplicationDbContext dbContext)
+        public UnitOfWork(ApplicationDbContext dbContext)
         {
             _dbContext = dbContext;
         }
-        void ICommit.Commit()
+        void IUnitOfWork.Commit()
         {
             _dbContext.SaveChanges();
         }

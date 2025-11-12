@@ -8,8 +8,8 @@ namespace BookShelf.API.Services
     public class BookService : IBookService
     {
         private readonly IBookRepository _bookRepository;
-        private readonly ICommit _db;
-        public BookService(IBookRepository bookRepository, ICommit commit)
+        private readonly IUnitOfWork _db;
+        public BookService(IBookRepository bookRepository, IUnitOfWork commit)
         {
             _bookRepository = bookRepository;
             _db = commit;

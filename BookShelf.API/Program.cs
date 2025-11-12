@@ -1,4 +1,10 @@
 using BookShelf.API.Data;
+using BookShelf.API.Repository;
+using BookShelf.API.Repository.Common;
+using BookShelf.API.Repository.Common.IRepository;
+using BookShelf.API.Repository.Interfaces;
+using BookShelf.API.Services;
+using BookShelf.API.Services.IServices;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +20,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DB"));
 });
+
+builder.Services.AddScoped<IBookService,BookService>();
+builder.Services.AddScoped<IBookRepository,BookRepository>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
 
