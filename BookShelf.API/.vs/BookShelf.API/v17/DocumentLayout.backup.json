@@ -1,21 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Rifatul\\Desktop\\TicketXpress\\BookShelf.API\\",
+  "WorkspaceRootPath": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|c:\\users\\rifatul\\desktop\\ticketxpress\\bookshelf.api\\entityconfigurations\\bookconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|solutionrelative:entityconfigurations\\bookconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|c:\\users\\rifatul\\desktop\\bookshelf.api\\bookshelf.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|c:\\users\\rifatul\\desktop\\ticketxpress\\bookshelf.api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|c:\\users\\rifatul\\desktop\\bookshelf.api\\bookshelf.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|c:\\users\\rifatul\\desktop\\bookshelf.api\\bookshelf.api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|c:\\users\\rifatul\\desktop\\ticketxpress\\bookshelf.api\\entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|c:\\users\\rifatul\\desktop\\bookshelf.api\\bookshelf.api\\entityconfigurations\\bookconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|solutionrelative:entityconfigurations\\bookconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|c:\\users\\rifatul\\desktop\\bookshelf.api\\bookshelf.api\\entityconfigurations\\authorconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|solutionrelative:entityconfigurations\\authorconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|c:\\users\\rifatul\\desktop\\bookshelf.api\\bookshelf.api\\entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|solutionrelative:entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|c:\\users\\rifatul\\desktop\\ticketxpress\\bookshelf.api\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|c:\\users\\rifatul\\desktop\\bookshelf.api\\bookshelf.api\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|solutionrelative:entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -31,54 +43,91 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-12T05:20:35.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T05:19:40.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthorConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\EntityConfigurations\\AuthorConfig.cs",
+              "RelativeDocumentMoniker": "EntityConfigurations\\AuthorConfig.cs",
+              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\EntityConfigurations\\AuthorConfig.cs",
+              "RelativeToolTip": "EntityConfigurations\\AuthorConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T05:10:13.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "BookConfig.cs",
-              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\TicketXpress\\BookShelf.API\\EntityConfigurations\\BookConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\EntityConfigurations\\BookConfig.cs",
               "RelativeDocumentMoniker": "EntityConfigurations\\BookConfig.cs",
-              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\TicketXpress\\BookShelf.API\\EntityConfigurations\\BookConfig.cs*",
-              "RelativeToolTip": "EntityConfigurations\\BookConfig.cs*",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAWwBUAAAAuAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\EntityConfigurations\\BookConfig.cs",
+              "RelativeToolTip": "EntityConfigurations\\BookConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-12T04:55:28.952Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\TicketXpress\\BookShelf.API\\Data\\ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\TicketXpress\\BookShelf.API\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-12T04:49:12.171Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Author.cs",
-              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\TicketXpress\\BookShelf.API\\Entities\\Author.cs",
+              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\Entities\\Author.cs",
               "RelativeDocumentMoniker": "Entities\\Author.cs",
-              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\TicketXpress\\BookShelf.API\\Entities\\Author.cs",
+              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\Entities\\Author.cs",
               "RelativeToolTip": "Entities\\Author.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T04:47:39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-12T04:47:39Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\TicketXpress\\BookShelf.API\\Entities\\Book.cs",
+              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\Entities\\Book.cs",
               "RelativeDocumentMoniker": "Entities\\Book.cs",
-              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\TicketXpress\\BookShelf.API\\Entities\\Book.cs",
+              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\Entities\\Book.cs",
               "RelativeToolTip": "Entities\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T04:37:09.665Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-12T04:37:09.665Z"
             }
           ]
         }
