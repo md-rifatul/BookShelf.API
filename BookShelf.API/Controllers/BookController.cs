@@ -16,28 +16,28 @@ namespace BookShelf.API.Controllers
             _bookService = bookService;
         }
 
-        [HttpGet("GetBooks")]
+        [HttpGet("books")]
         public IActionResult GetAllBooks()
         {
             var books = _bookService.GetAllBooks().ToList();
             return Ok(books);
         }
 
-        [HttpGet("GetBook/{id}")]
+        [HttpGet("books/{id}")]
         public IActionResult GetBook(int id)
         {
             var book = _bookService.GetBookById(id);
             return Ok(book);
         }
 
-        [HttpPost("AddBook")]
+        [HttpPost("books")]
         public IActionResult AddBook([FromBody] BookCreateDto bookCreateDto)
         {
             _bookService.AddBook(bookCreateDto);
             return Ok();
         }
 
-        [HttpPut("Update/{id}")]
+        [HttpPut("books/{id}")]
         public IActionResult UpdateBook(int id, [FromBody] BookUpdateDto bookUpdateDto)
         {
             var existingBook = _bookService.GetBookById(id);
@@ -48,7 +48,7 @@ namespace BookShelf.API.Controllers
             return Ok();
         }
 
-        [HttpDelete("Delete/{id}")]
+        [HttpDelete("books/{id}")]
         public IActionResult DeleteBook(int id)
         {
             var existingBook = _bookService.GetBookById(id);

@@ -1,12 +1,13 @@
-﻿using BookShelf.API.Entities;
+﻿using BookShelf.API.DTO;
+using BookShelf.API.Entities;
 
 namespace BookShelf.API.Services.IServices
 {
     public interface IAuthorService
     {
-        IEnumerable<Author> GetAllAuthors();
+        IEnumerable<AuthorViewDto> GetAllAuthors();
         Author GetAuthorById(int id);
-        void AddAuthor(Author author);
+        void AddAuthor(AuthorCreate authorCreate);
         void UpdateAuthor(Author author);
         void DeleteAuthor(Author author);
     }

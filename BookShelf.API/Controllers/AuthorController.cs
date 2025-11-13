@@ -1,4 +1,5 @@
-﻿using BookShelf.API.Entities;
+﻿using BookShelf.API.DTO;
+using BookShelf.API.Entities;
 using BookShelf.API.Services.IServices;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -16,10 +17,16 @@ namespace BookShelf.API.Controllers
         }
 
         [HttpPost("Add")]
-        public IActionResult AddAuthor([FromBody] Author author)
+        public IActionResult AddAuthor([FromBody] AuthorCreate authorCreate)
         {
-            _authorService.AddAuthor(author);
+            _authorService.AddAuthor(authorCreate);
             return Ok();
+        }
+        [HttpGet("GetAll")]
+        public IActionResult GetAllAuthor()
+        {
+            var authors = _authorService.GetAllAuthors();
+            return Ok(authors);
         }
 
     }

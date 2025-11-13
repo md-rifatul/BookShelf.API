@@ -17,6 +17,8 @@ namespace BookShelf.API.MappingProfile
 
             CreateMap<BookCreateDto, Book>();
             CreateMap<BookUpdateDto, Book>();
+            CreateMap<AuthorCreate, Author>();
+            CreateMap<Author, AuthorViewDto>();
         }
     }
 }
