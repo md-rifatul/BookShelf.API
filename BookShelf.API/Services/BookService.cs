@@ -4,7 +4,6 @@ using BookShelf.API.Entities;
 using BookShelf.API.Repository.Common.IRepository;
 using BookShelf.API.Repository.Interfaces;
 using BookShelf.API.Services.IServices;
-using static System.Reflection.Metadata.BlobBuilder;
 
 namespace BookShelf.API.Services
 {
@@ -28,8 +27,8 @@ namespace BookShelf.API.Services
 
         public void DeleteBook(BookDto bookDto)
         {
-            var book = _mapper.Map<BookDto>(bookDto);
-            //_bookRepository?.Delete(book);
+            var existingBook = _bookRepository.GetById(x=>x.Id==bookDto.Id);
+            _bookRepository?.Delete(existingBook);
             _db.Commit();
         }
 
@@ -45,9 +44,13 @@ namespace BookShelf.API.Services
             return _mapper.Map<BookDto>(book);
         }
 
-        public void UpdateBook(BookUpdateDto updateDto)
+        public void UpdateBook(BookDto bookDto)
         {
-            var book = _mapper.Map<Book>(updateDto);
+            var existingBook = _bookRepository.GetById(x => x.Id == bookDto.Id);
+            existingBook.Title = bookDto.Title;
+            existingBook.Year = bookDto.Year;
+            existingBook.AuthorId = bookDto.AuthorId;
+           var book = _mapper.Map<Book>(existingBook);
             _bookRepository.Update(book);
             _db.Commit();
         }

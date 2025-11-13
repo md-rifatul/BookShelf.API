@@ -49,7 +49,7 @@ namespace BookShelf.API.Repository.Common
                     query = query.Include(incProp.Trim());
                 }
             }
-            return query.FirstOrDefault();
+            return query.FirstOrDefault(filter);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using BookShelf.API.Entities;
+﻿using BookShelf.API.DTO;
+using BookShelf.API.Entities;
 using BookShelf.API.Repository.Common.IRepository;
 
 namespace BookShelf.API.Repository.Interfaces

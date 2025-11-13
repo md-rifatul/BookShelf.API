@@ -44,7 +44,7 @@ namespace BookShelf.API.Controllers
             existingBook.Title = bookUpdateDto.Title;
             existingBook.AuthorId = bookUpdateDto.AuthorId;
             existingBook.Year = bookUpdateDto.Year;
-            //_bookService.UpdateBook(existingBook);
+            _bookService.UpdateBook(existingBook);
             return Ok();
         }
 

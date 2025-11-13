@@ -9,6 +9,6 @@ namespace BookShelf.API.Services.IServices
         BookDto GetBookById(int id);
         void DeleteBook(BookDto bookDto);
         void AddBook(BookCreateDto bookCreateDto);
-        void UpdateBook(BookUpdateDto bookUpdateDto);
+        void UpdateBook(BookDto bookDto);
     }
 }
