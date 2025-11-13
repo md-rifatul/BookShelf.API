@@ -20,6 +20,10 @@ namespace BookShelf.API.Services
         }
         public void AddBook(BookCreateDto bookCreateDto)
         {
+            if (bookCreateDto == null)
+            {
+                throw new Exception("Book data is required");
+            }
             var book = _mapper.Map<Book>(bookCreateDto);
             _bookRepository.Add(book);
             _db.Commit();

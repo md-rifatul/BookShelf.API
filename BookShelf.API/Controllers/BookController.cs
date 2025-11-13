@@ -19,42 +19,78 @@ namespace BookShelf.API.Controllers
         [HttpGet("books")]
         public IActionResult GetAllBooks()
         {
-            var books = _bookService.GetAllBooks().ToList();
-            return Ok(books);
+            try
+            {
+                var books = _bookService.GetAllBooks().ToList();
+                return Ok(books);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
         }
 
         [HttpGet("books/{id}")]
         public IActionResult GetBook(int id)
         {
-            var book = _bookService.GetBookById(id);
-            return Ok(book);
+            try
+            {
+                var book = _bookService.GetBookById(id);
+                return Ok(book);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
         }
 
         [HttpPost("books")]
-        public IActionResult AddBook([FromBody] BookCreateDto bookCreateDto)
+        public IActionResult AddBook([FromBody] BookCreateDto dto)
         {
-            _bookService.AddBook(bookCreateDto);
-            return Ok();
+            try
+            {
+                _bookService.AddBook(dto);
+                return Ok("Book added successfully");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
         }
 
         [HttpPut("books/{id}")]
-        public IActionResult UpdateBook(int id, [FromBody] BookUpdateDto bookUpdateDto)
+        public IActionResult UpdateBook(int id, [FromBody] BookUpdateDto dto)
         {
-            var existingBook = _bookService.GetBookById(id);
-            existingBook.Title = bookUpdateDto.Title;
-            existingBook.AuthorId = bookUpdateDto.AuthorId;
-            existingBook.Year = bookUpdateDto.Year;
-            _bookService.UpdateBook(existingBook);
-            return Ok();
+            try
+            {
+                var existingBook = _bookService.GetBookById(id);
+
+                existingBook.Title = dto.Title;
+                existingBook.AuthorId = dto.AuthorId;
+                existingBook.Year = dto.Year;
+
+                _bookService.UpdateBook(existingBook);
+                return Ok("Book updated successfully");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
         }
 
         [HttpDelete("books/{id}")]
         public IActionResult DeleteBook(int id)
         {
-            var existingBook = _bookService.GetBookById(id);
-            _bookService.DeleteBook(existingBook);
-            return Ok();
+            try
+            {
+                var existingBook = _bookService.GetBookById(id);
+                _bookService.DeleteBook(existingBook);
+                return Ok("Book deleted successfully");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
         }
-
     }
 }

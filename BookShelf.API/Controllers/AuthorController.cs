@@ -1,5 +1,4 @@
 ﻿using BookShelf.API.DTO;
-using BookShelf.API.Entities;
 using BookShelf.API.Services.IServices;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -19,15 +18,29 @@ namespace BookShelf.API.Controllers
         [HttpPost("Add")]
         public IActionResult AddAuthor([FromBody] AuthorCreate authorCreate)
         {
-            _authorService.AddAuthor(authorCreate);
-            return Ok();
+            try
+            {
+                _authorService.AddAuthor(authorCreate);
+                return Ok("Author added successfully");
+            }
+            catch
+            {
+                return StatusCode(500, "Something went wrong while adding the author");
+            }
         }
+
         [HttpGet("GetAll")]
         public IActionResult GetAllAuthor()
         {
-            var authors = _authorService.GetAllAuthors();
-            return Ok(authors);
+            try
+            {
+                var authors = _authorService.GetAllAuthors();
+                return Ok(authors);
+            }
+            catch
+            {
+                return StatusCode(500, "Something went wrong while fetching authors");
+            }
         }
-
     }
 }
