@@ -1,6 +1,3 @@
-Here is the full README rewritten **entirely in Markdown language**.
-Just **copy & paste** it into your `README.md`.
-
 ---
 
 ```markdown
@@ -23,56 +20,6 @@ This project demonstrates clean architecture using **Repository Pattern**, **Uni
 
 ## 📁 Project Structure
 
-```
-
-BookShelf.API/
-│── Controllers/
-│     ├── AuthorController.cs
-│     └── BookController.cs
-│
-│── Data/
-│     └── ApplicationDbContext.cs
-│
-│── DTO/
-│     ├── AuthorCreate.cs
-│     ├── AuthorViewDto.cs
-│     ├── BookCreateDto.cs
-│     ├── BookDto.cs
-│     └── BookUpdateDto.cs
-│
-│── Entities/
-│     ├── Author.cs
-│     └── Book.cs
-│
-│── EntityConfigurations/
-│     ├── AuthorConfig.cs
-│     └── BookConfig.cs
-│
-│── MappingProfile/
-│     └── MappingProfile.cs
-│
-│── Repository/
-│     ├── Common/
-│     │     ├── IRepository.cs
-│     │     ├── IUnitOfWork.cs
-│     │     ├── Repository.cs
-│     │     └── UnitOfWork.cs
-│     ├── Interfaces/
-│     │     ├── IAuthorRepository.cs
-│     │     └── IBookRepository.cs
-│     └── Implementations/
-│           ├── AuthorRepository.cs
-│           └── BookRepository.cs
-│
-│── Services/
-│     ├── IAuthorService.cs
-│     ├── IBookService.cs
-│     ├── AuthorService.cs
-│     └── BookService.cs
-│
-└── appsettings.json
-
-````
 
 ---
 
