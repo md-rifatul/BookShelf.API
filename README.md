@@ -1,6 +1,6 @@
----
 
-```markdown
+
+````markdown
 # 📚 BookShelf API  
 A simple **.NET Web API** for managing a list of books.  
 This project demonstrates clean architecture using **Repository Pattern**, **Unit of Work**, **Services Layer**, **DTOs**, and **EntityConfigurations**.
@@ -19,7 +19,7 @@ This project demonstrates clean architecture using **Repository Pattern**, **Uni
 ---
 
 ## 📁 Project Structure
-
+*(Add your folder structure here if needed)*
 
 ---
 
@@ -122,20 +122,6 @@ dotnet run
 
 ```
 https://localhost:{port}/swagger
-```
-
----
-
-## 📄 Book Model
-
-```csharp
-public class Book
-{
-    public int Id { get; set; }
-    public string Title { get; set; }
-    public string Author { get; set; }
-    public int Year { get; set; }
-}
 ```
 
 ---
