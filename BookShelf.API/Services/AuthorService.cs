@@ -34,7 +34,7 @@ namespace BookShelf.API.Services
 
         public Author GetAuthorById(int id)
         {
-            return _authorRepository.GetById(id);
+            return _authorRepository.GetById(x => x.Id == id);
         }
 
         public void UpdateAuthor(Author author)

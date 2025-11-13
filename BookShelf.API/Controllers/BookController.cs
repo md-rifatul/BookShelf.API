@@ -1,4 +1,5 @@
-﻿using BookShelf.API.Entities;
+﻿using BookShelf.API.DTO;
+using BookShelf.API.Entities;
 using BookShelf.API.Services.IServices;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -30,20 +31,20 @@ namespace BookShelf.API.Controllers
         }
 
         [HttpPost("AddBook")]
-        public IActionResult AddBook([FromBody] Book book)
+        public IActionResult AddBook([FromBody] BookCreateDto bookCreateDto)
         {
-            _bookService.AddBook(book);
+            _bookService.AddBook(bookCreateDto);
             return Ok();
         }
 
         [HttpPut("Update/{id}")]
-        public IActionResult UpdateBook(int id, [FromBody] Book book)
+        public IActionResult UpdateBook(int id, [FromBody] BookUpdateDto bookUpdateDto)
         {
             var existingBook = _bookService.GetBookById(id);
-            existingBook.Title = book.Title;
-            existingBook.AuthorId = book.AuthorId;
-            existingBook.Year = book.Year;
-            _bookService.UpdateBook(existingBook);
+            existingBook.Title = bookUpdateDto.Title;
+            existingBook.AuthorId = bookUpdateDto.AuthorId;
+            existingBook.Year = bookUpdateDto.Year;
+            //_bookService.UpdateBook(existingBook);
             return Ok();
         }
 

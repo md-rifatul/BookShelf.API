@@ -1,4 +1,5 @@
 using BookShelf.API.Data;
+using BookShelf.API.MappingProfile;
 using BookShelf.API.Repository;
 using BookShelf.API.Repository.Common;
 using BookShelf.API.Repository.Common.IRepository;
@@ -26,6 +27,8 @@ builder.Services.AddScoped<IBookRepository,BookRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IAuthorRepository, AuthorRepository>();
 builder.Services.AddScoped<IAuthorService, AuthorService>();
+
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 var app = builder.Build();
 

@@ -1,7 +1,10 @@
-﻿using BookShelf.API.Entities;
+﻿using AutoMapper;
+using BookShelf.API.DTO;
+using BookShelf.API.Entities;
 using BookShelf.API.Repository.Common.IRepository;
 using BookShelf.API.Repository.Interfaces;
 using BookShelf.API.Services.IServices;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace BookShelf.API.Services
 {
@@ -9,35 +12,42 @@ namespace BookShelf.API.Services
     {
         private readonly IBookRepository _bookRepository;
         private readonly IUnitOfWork _db;
-        public BookService(IBookRepository bookRepository, IUnitOfWork commit)
+        private readonly IMapper _mapper;
+        public BookService(IBookRepository bookRepository, IUnitOfWork commit, IMapper mapper)
         {
             _bookRepository = bookRepository;
             _db = commit;
+            _mapper = mapper;
         }
-        public void AddBook(Book book)
+        public void AddBook(BookCreateDto bookCreateDto)
         {
+            var book = _mapper.Map<Book>(bookCreateDto);
             _bookRepository.Add(book);
             _db.Commit();
         }
 
-        public void DeleteBook(Book book)
+        public void DeleteBook(BookDto bookDto)
         {
-            _bookRepository?.Delete(book);
+            var book = _mapper.Map<BookDto>(bookDto);
+            //_bookRepository?.Delete(book);
             _db.Commit();
         }
 
-        public IEnumerable<Book> GetAllBooks()
+        public IEnumerable<BookDto> GetAllBooks()
         {
-            return _bookRepository.GetAll();
+            var books = _bookRepository.GetAll(includeProp:"Author");
+            return _mapper.Map<IEnumerable<BookDto>>(books);
         }
 
-        public Book GetBookById(int id)
+        public BookDto GetBookById(int id)
         {
-            return _bookRepository.GetById(id);
+            var book = _bookRepository.GetById(x=>x.Id==id,"Author");
+            return _mapper.Map<BookDto>(book);
         }
 
-        public void UpdateBook(Book book)
+        public void UpdateBook(BookUpdateDto updateDto)
         {
+            var book = _mapper.Map<Book>(updateDto);
             _bookRepository.Update(book);
             _db.Commit();
         }
