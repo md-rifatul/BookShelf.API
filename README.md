@@ -198,12 +198,3 @@ public class Book
 This project is open-source. Use it freely.
 
 ```
-
----
-
-If you want, I can also generate:
-✅ API documentation table  
-✅ ER diagram  
-✅ Project architecture diagram  
-Just tell me!
-```
