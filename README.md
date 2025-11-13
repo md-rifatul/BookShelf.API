@@ -16,12 +16,6 @@ This project demonstrates clean architecture using **Repository Pattern**, **Uni
 - AutoMapper integration  
 - EF Core + Repository + Unit of Work architecture  
 
----
-
-## 📁 Project Structure
-*(Add your folder structure here if needed)*
-
----
 
 # 📘 Book API Endpoints
 
@@ -33,7 +27,7 @@ Returns all books.
 [
   {
     "id": 1,
-    "title": "The Hobbit",
+    "title": "English",
     "author": "J.R.R. Tolkien",
     "year": 1937
   }
