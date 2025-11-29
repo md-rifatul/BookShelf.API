@@ -2,6 +2,7 @@
 using BookShelf.API.Services.IServices;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 
 namespace BookShelf.API.Controllers
 {
@@ -30,6 +31,7 @@ namespace BookShelf.API.Controllers
         }
 
         [HttpGet("GetAll")]
+        [EnableRateLimiting("Sliding")]
         public IActionResult GetAllAuthor()
         {
             try

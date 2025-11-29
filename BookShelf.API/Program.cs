@@ -6,7 +6,9 @@ using BookShelf.API.Repository.Common.IRepository;
 using BookShelf.API.Repository.Interfaces;
 using BookShelf.API.Services;
 using BookShelf.API.Services.IServices;
+using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
+using System.Threading.RateLimiting;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +32,32 @@ builder.Services.AddScoped<IAuthorService, AuthorService>();
 
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 
+//Fixed window limiting
+builder.Services.AddRateLimiter(rate =>
+{
+rate.AddFixedWindowLimiter(policyName: "Fixed", options =>
+{
+    options.PermitLimit = 3;
+    options.Window = TimeSpan.FromSeconds(5);
+    options.QueueLimit = 2;
+    options.QueueProcessingOrder = QueueProcessingOrder.OldestFirst;
+});
+    rate.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
+});
+
+//Sliding window limiting
+builder.Services.AddRateLimiter(rate =>
+{
+    rate.AddSlidingWindowLimiter(policyName: "Sliding", options =>
+    {
+        options.PermitLimit = 2;
+        options.Window = TimeSpan.FromSeconds(10);
+        options.SegmentsPerWindow = 5;
+    });
+    rate.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
+});
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -42,6 +70,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+app.UseRateLimiter();
 
 app.MapControllers();
 
