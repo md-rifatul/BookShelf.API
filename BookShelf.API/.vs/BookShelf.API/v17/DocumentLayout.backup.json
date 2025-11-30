@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\Migrations\\20251129182134_UserTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20251129182134_UserTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|c:\\users\\rifatul\\desktop\\bookshelf.api\\bookshelf.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|c:\\users\\rifatul\\desktop\\bookshelf.api\\bookshelf.api\\dto\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|solutionrelative:dto\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|c:\\users\\rifatul\\desktop\\bookshelf.api\\bookshelf.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|c:\\users\\rifatul\\desktop\\bookshelf.api\\bookshelf.api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|c:\\users\\rifatul\\desktop\\bookshelf.api\\bookshelf.api\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|solutionrelative:entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|c:\\users\\rifatul\\desktop\\bookshelf.api\\bookshelf.api\\dto\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|solutionrelative:dto\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|c:\\users\\rifatul\\desktop\\bookshelf.api\\bookshelf.api\\entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|solutionrelative:entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|c:\\users\\rifatul\\desktop\\bookshelf.api\\bookshelf.api\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E5B7594-3159-4CD5-8B78-9A12435500DE}|BookShelf.API.csproj|solutionrelative:entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,33 +46,70 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20251129182134_UserTable.cs",
-              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\Migrations\\20251129182134_UserTable.cs",
-              "RelativeDocumentMoniker": "Migrations\\20251129182134_UserTable.cs",
-              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\Migrations\\20251129182134_UserTable.cs",
-              "RelativeToolTip": "Migrations\\20251129182134_UserTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T18:21:34.55Z",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-30T15:46:39.427Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "UserLoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\DTO\\UserLoginDto.cs",
+              "RelativeDocumentMoniker": "DTO\\UserLoginDto.cs",
+              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\DTO\\UserLoginDto.cs",
+              "RelativeToolTip": "DTO\\UserLoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T19:46:18.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\Controllers\\AuthController.cs*",
+              "RelativeToolTip": "Controllers\\AuthController.cs*",
+              "ViewState": "AgIAADcAAAAAAAAAAAAqwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T19:01:21.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\DTO\\UserCreateDto.cs",
+              "RelativeDocumentMoniker": "DTO\\UserCreateDto.cs",
+              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\DTO\\UserCreateDto.cs",
+              "RelativeToolTip": "DTO\\UserCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T19:00:11.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA1wA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA0AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T18:19:29.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-29T18:19:29.267Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Entities\\User.cs",
@@ -68,21 +117,19 @@
               "RelativeToolTip": "Entities\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T18:18:43.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-29T18:18:43.088Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Author.cs",
               "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\Entities\\Author.cs",
               "RelativeDocumentMoniker": "Entities\\Author.cs",
               "ToolTip": "C:\\Users\\Rifatul\\Desktop\\BookShelf.API\\BookShelf.API\\Entities\\Author.cs",
               "RelativeToolTip": "Entities\\Author.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T18:18:14.003Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-29T18:18:14.003Z"
             }
           ]
         }

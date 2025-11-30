@@ -4,6 +4,10 @@ using BookShelf.API.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace BookShelf.API.Controllers
 {
@@ -36,6 +40,45 @@ namespace BookShelf.API.Controllers
             _applicationDbContext.Users.Add(user);
             _applicationDbContext.SaveChanges();
             return Ok();
+        }
+
+        [HttpPost("login")]
+        public IActionResult Login(UserLoginDto userLoginDto)
+        {
+            var user = _applicationDbContext.Users.FirstOrDefault(u=>u.UserName==userLoginDto.Username);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            var result = new PasswordHasher<User>().VerifyHashedPassword(user, user.HashPassword, userLoginDto.Password);
+
+            if (result== PasswordVerificationResult.Failed)
+            {
+                return null;
+            }
+
+            string token = CreateToken(user);
+            return Ok(token);
+        }
+
+        public string CreateToken(User user)
+        {
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.Name, user.UserName),
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())
+            };
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration.GetValue<string>("AppSettings:Token")!));
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512);
+
+            var tokenDescriptor = new JwtSecurityToken(
+                issuer: _configuration.GetValue<string>("AppSettings:Issuer"),
+                audience: _configuration.GetValue<string>("AppSettings:Audience"),
+                expires: DateTime.Now.AddDays(1),
+                signingCredentials: creds
+                );
+            return new JwtSecurityTokenHandler().WriteToken(tokenDescriptor);
         }
     }
 }
